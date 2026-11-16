@@ -4,20 +4,22 @@ import { site } from "@/data/site";
 type LogoProps = {
   className?: string;
   priority?: boolean;
+  /** Kept for existing call sites; the official logo is always shown in its original colours. */
+  variant?: "dark" | "light";
+  /** Kept for existing call sites; on the light theme the logo needs no halo. */
+  glow?: boolean;
 };
 
-/** The logo file is transparent inside the oval, so it always sits on a white chip. */
+/** The official logo, never recoloured or filtered. */
 export function Logo({ className = "h-10", priority }: LogoProps) {
   return (
-    <span className="inline-flex rounded-full bg-white px-2.5 py-1">
-      <Image
-        src="/images/logos/starmed-official.png"
-        alt={site.name}
-        width={724}
-        height={345}
-        priority={priority}
-        className={`w-auto ${className}`}
-      />
-    </span>
+    <Image
+      src="/images/logos/starmed-logo-main.png"
+      alt={site.name}
+      width={1910}
+      height={558}
+      priority={priority}
+      className={`w-auto ${className}`}
+    />
   );
 }

@@ -22,7 +22,9 @@ const fields = [
 ] as const;
 
 const inputClass =
-  "mt-1.5 w-full rounded-xl bg-paper px-4 py-3 text-ink outline-none ring-1 ring-ink/10 transition-shadow focus:ring-2 focus:ring-indigo";
+  "peer mt-2 w-full rounded-xl border border-ink/[0.12] bg-void/60 px-4 py-3.5 text-fg outline-none transition-all duration-300 placeholder:text-faint hover:border-ink/25 focus:border-cyan/60 focus:bg-cyan/[0.04] focus:shadow-[0_0_0_4px_rgba(23,54,140,0.048),0_0_30px_-8px_rgba(23,54,140,0.2)]";
+
+const labelClass = "font-mono text-[11px] uppercase tracking-[0.14em] text-dim";
 
 export function ContactForm() {
   const [values, setValues] = useState<ContactFormValues>({
@@ -45,8 +47,8 @@ export function ContactForm() {
   return (
     <form onSubmit={submit} className="grid gap-5 sm:grid-cols-2">
       {fields.map((field) => (
-        <label key={field.name} className="text-sm font-medium">
-          {field.label} *
+        <label key={field.name} className={labelClass}>
+          {field.label} <span className="text-cyan">*</span>
           <input
             required
             name={field.name}
@@ -54,35 +56,44 @@ export function ContactForm() {
             autoComplete={field.autoComplete}
             value={values[field.name]}
             onChange={update}
-            className={inputClass}
+            className={`${inputClass} font-sans text-base normal-case tracking-normal`}
           />
         </label>
       ))}
-      <label className="text-sm font-medium sm:col-span-2">
+      <label className={`${labelClass} sm:col-span-2`}>
         Enquiry Type
-        <select name="subject" value={values.subject} onChange={update} className={inputClass}>
+        <select
+          name="subject"
+          value={values.subject}
+          onChange={update}
+          className={`${inputClass} font-sans text-base normal-case tracking-normal [&>option]:bg-deep`}
+        >
           {subjects.map((subject) => (
             <option key={subject}>{subject}</option>
           ))}
         </select>
       </label>
-      <label className="text-sm font-medium sm:col-span-2">
-        Message / Product Requirements *
+      <label className={`${labelClass} sm:col-span-2`}>
+        Message / Product Requirements <span className="text-cyan">*</span>
         <textarea
           required
           name="message"
           rows={5}
           value={values.message}
           onChange={update}
-          className={inputClass}
+          className={`${inputClass} resize-none font-sans text-base normal-case tracking-normal`}
         />
       </label>
       <button
         type="submit"
-        className="inline-flex items-center justify-center gap-2 rounded-full bg-ink px-6 py-3.5 font-semibold text-white transition-colors hover:bg-indigo sm:col-span-2 sm:justify-self-start"
+        className="group relative inline-flex items-center justify-center gap-2 overflow-hidden rounded-full bg-accent hover:bg-accent/90 px-7 py-4 font-semibold text-on-accent shadow-[0_10px_40px_-10px_rgba(23,54,140,0.24)] transition-shadow duration-500 hover:shadow-[0_14px_60px_-8px_rgba(23,54,140,0.36)] sm:col-span-2 sm:justify-self-start"
       >
-        <MessageCircle className="size-4" aria-hidden />
-        Submit &amp; Send to WhatsApp
+        <span
+          aria-hidden
+          className="pointer-events-none absolute inset-y-0 -left-1/2 w-1/3 -skew-x-12 bg-white/40 blur-md transition-all duration-700 group-hover:left-[120%]"
+        />
+        <MessageCircle className="relative size-4" aria-hidden />
+        <span className="relative">Submit &amp; Send to WhatsApp</span>
       </button>
     </form>
   );

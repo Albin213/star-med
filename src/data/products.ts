@@ -13,7 +13,7 @@ export const products: Product[] = [
     "categoryName": "Intimate Wellness",
     "shortDescription": "Transparent natural rubber latex condoms with Hyaluronic Acid lubrication and reservoir tip.",
     "fullDescription": "DADA Plain Condoms are manufactured from premium natural rubber latex, featuring hyaluronic acid lubrication with a reservoir tip. Designed for maximum sensitivity, natural feel, and verified high safety standards.",
-    "image": "/images/products/dada-plain-condoms.jpg",
+    "image": "/images/products/dada-plain-condoms.png",
     "catalogueSlide": "/images/catalogue/page_11.jpg",
     "cataloguePage": 11,
     "sizesVariants": [
@@ -52,7 +52,7 @@ export const products: Product[] = [
     "categoryName": "Intimate Wellness",
     "shortDescription": "Intensely textured condoms with prominent raised dots, hyaluronic acid, and subtle ice cream flavor.",
     "fullDescription": "DADA Big Dotted Condoms feature specially engineered large raised studs across the shaft for enhanced tactile stimulation, lubricated with pure hyaluronic acid and a delicate ice cream flavor.",
-    "image": "/images/products/dada-big-dotted-condoms.jpg",
+    "image": "/images/products/dada-big-dotted-condoms.png",
     "catalogueSlide": "/images/catalogue/page_12.jpg",
     "cataloguePage": 12,
     "sizesVariants": [
@@ -90,7 +90,7 @@ export const products: Product[] = [
     "categoryName": "Intimate Wellness",
     "shortDescription": "Dual-action dotted and ribbed texture with hyaluronic acid lubricant and cola flavor.",
     "fullDescription": "DADA Dotted & Ribbed Condoms combine circular ribs and raised dots for dual stimulation. Pre-lubricated with moisture-locking hyaluronic acid and refreshing cola flavor.",
-    "image": "/images/products/dada-dotted-ribbed-condoms.jpg",
+    "image": "/images/products/dada-dotted-ribbed-condoms.png",
     "catalogueSlide": "/images/catalogue/page_13.jpg",
     "cataloguePage": 13,
     "sizesVariants": [
@@ -126,7 +126,7 @@ export const products: Product[] = [
     "categoryName": "Intimate Wellness",
     "shortDescription": "Specially formulated climactic control delay condoms with hyaluronic acid and sugar note.",
     "fullDescription": "DADA Delay Condoms are designed to prolong endurance and mutual pleasure, featuring a specialized delay agent formulation, reservoir tip, and subtle sweet sugar scent.",
-    "image": "/images/products/dada-delay-condoms.jpg",
+    "image": "/images/products/dada-delay-condoms.png",
     "catalogueSlide": "/images/catalogue/page_14.jpg",
     "cataloguePage": 14,
     "sizesVariants": [
@@ -162,7 +162,7 @@ export const products: Product[] = [
     "categoryName": "Intimate Wellness",
     "shortDescription": "Ultra-thin wall design for maximum natural skin-on-skin sensation with cooling mint flavor.",
     "fullDescription": "DADA Ultra Thin Condoms offer an ultra-fine 0.045mm membrane engineered to transmit body heat effortlessly for an authentic, barely-there experience with soothing mint fragrance.",
-    "image": "/images/products/dada-ultra-thin-condoms.jpg",
+    "image": "/images/products/dada-ultra-thin-condoms.png",
     "catalogueSlide": "/images/catalogue/page_15.jpg",
     "cataloguePage": 15,
     "sizesVariants": [
@@ -198,7 +198,7 @@ export const products: Product[] = [
     "categoryName": "Intimate Wellness",
     "shortDescription": "Comfort-fit larger proportions with premium chocolate flavor and hyaluronic acid.",
     "fullDescription": "DADA King Size Condoms provide increased roominess and superior comfort for those requiring a more relaxed fit, pre-lubricated with hyaluronic acid and aromatic chocolate flavor.",
-    "image": "/images/products/dada-king-size-condoms.jpg",
+    "image": "/images/products/dada-king-size-condoms.png",
     "catalogueSlide": "/images/catalogue/page_16.jpg",
     "cataloguePage": 16,
     "sizesVariants": [
@@ -234,7 +234,7 @@ export const products: Product[] = [
     "categoryName": "Cotton Products",
     "shortDescription": "100% natural pure cotton disposable cleansing tissues (80 pcs/pack, 200x200mm).",
     "fullDescription": "DADA Cotton Tissues are made of 100% pure natural cotton fibers. Exceptionally soft, durable when wet or dry, and chemical-free. Perfect for facial skincare cleansing, makeup removal, and delicate infant baby care.",
-    "image": "/images/products/dada-cotton-tissue.jpg",
+    "image": "/images/products/dada-cotton-tissue.png",
     "catalogueSlide": "/images/catalogue/page_18.jpg",
     "cataloguePage": 18,
     "sizesVariants": [
@@ -275,7 +275,7 @@ export const products: Product[] = [
     "categoryName": "Cotton Products",
     "shortDescription": "Ultra-soft, hypoallergenic 100-piece pure natural cotton balls in easy-open bag.",
     "fullDescription": "DADA Cotton Balls are crafted from 100% pure natural cotton. Highly absorbent, ultra-gentle on sensitive skin, and lint-free. Suitable for cosmetic, pediatric, and clinical skin prep.",
-    "image": "/images/products/dada-cotton-balls.jpg",
+    "image": "/images/products/dada-cotton-balls.png",
     "catalogueSlide": "/images/catalogue/page_20.jpg",
     "cataloguePage": 20,
     "sizesVariants": [
@@ -310,7 +310,7 @@ export const products: Product[] = [
     "categoryName": "Cotton Products",
     "shortDescription": "100-pack circular pure cotton cosmetic pads with quilted edges for lint-free care.",
     "fullDescription": "DADA Cotton Pads provide premium softness and dual-sided efficiency for toner application, makeup removal, and skincare treatments without fraying or leaving behind residual fibers.",
-    "image": "/images/products/dada-cotton-pads.jpg",
+    "image": "/images/products/dada-cotton-pads.png",
     "catalogueSlide": "/images/catalogue/page_21.jpg",
     "cataloguePage": 21,
     "sizesVariants": [
@@ -345,7 +345,7 @@ export const products: Product[] = [
     "categoryName": "Cotton Products",
     "shortDescription": "Eco-friendly biodegradable bamboo stems with 100% soft cotton tips in round dispenser bottle.",
     "fullDescription": "DADA Bamboo Cotton Buds feature sturdy 100% sustainable bamboo sticks tipped with chlorine-free pure cotton. Packaged in reusable cylindrical dispenser bottles.",
-    "image": "/images/products/dada-bamboo-cotton-buds.jpg",
+    "image": "/images/products/dada-bamboo-cotton-buds.png",
     "catalogueSlide": "/images/catalogue/page_22.jpg",
     "cataloguePage": 22,
     "sizesVariants": [
@@ -416,7 +416,7 @@ export const products: Product[] = [
     "categoryName": "Personal Care & Hygiene",
     "shortDescription": "3-Ply disposable protective face masks with melt-blown filtration layer (50 pcs/box).",
     "fullDescription": "DADA Disposable Protective Masks are constructed with high-efficiency 3-ply filtration: 67% skin-friendly non-woven fabric and 33% high-density melt-blown filter cloth with elastic ear loops and adjustable nose bridge.",
-    "image": "/images/products/dada-protective-mask-blue.jpg",
+    "image": "/images/products/dada-protective-mask-blue.png",
     "catalogueSlide": "/images/catalogue/page_26.jpg",
     "cataloguePage": 26,
     "sizesVariants": [
@@ -450,7 +450,7 @@ export const products: Product[] = [
     "categoryName": "Personal Care & Hygiene",
     "shortDescription": "Sleek black 3-ply melt-blown protective disposable mask (50 pcs/box).",
     "fullDescription": "DADA Black Protective Masks provide modern aesthetic styling while maintaining high bacterial and particulate filtration through 67% non-woven and 33% melt-blown filtration layers.",
-    "image": "/images/products/dada-protective-mask-black.jpg",
+    "image": "/images/products/dada-protective-mask-black.png",
     "catalogueSlide": "/images/catalogue/page_27.jpg",
     "cataloguePage": 27,
     "sizesVariants": [
@@ -483,7 +483,7 @@ export const products: Product[] = [
     "categoryName": "Personal Care & Hygiene",
     "shortDescription": "Individually wrapped single-package protective masks for clinical hygiene and portability.",
     "fullDescription": "DADA Single Package Disposable Protective Masks feature individually sealed wrappers for each mask, ensuring zero cross-contamination. Ideal for medical facilities, hotels, corporate offices, and travel.",
-    "image": "/images/products/dada-protective-mask-single.jpg",
+    "image": "/images/products/dada-protective-mask-single.png",
     "catalogueSlide": "/images/catalogue/page_29.jpg",
     "cataloguePage": 29,
     "sizesVariants": [
@@ -584,7 +584,7 @@ export const products: Product[] = [
     "categoryName": "Home Healthcare",
     "shortDescription": "Heavy-duty 2 Litre natural rubber hot water bag with removable soft touch cover.",
     "fullDescription": "DADA Hot Water Bag provides soothing, deep-penetrating heat therapy for cramps, muscle stiffness, and joint aches. Equipped with a secure leak-proof stopper and a soft-touch plush removable cover.",
-    "image": "/images/products/dada-hot-water-bag.jpg",
+    "image": "/images/products/dada-hot-water-bag.png",
     "catalogueSlide": "/images/catalogue/page_30.jpg",
     "cataloguePage": 30,
     "sizesVariants": [
@@ -654,7 +654,7 @@ export const products: Product[] = [
     "categoryName": "Hot & Cold Therapy",
     "shortDescription": "Full lumbar coverage dual hot/cold therapy wrap with ergonomic belt (35x20cm).",
     "fullDescription": "DADA Waist Protection Gel Pack provides wide thermal coverage for the lower back and lumbar vertebrae, helping relieve lumbar disc pain, posture fatigue, and muscle tension.",
-    "image": "/images/products/dada-gel-pack-waist.jpg",
+    "image": "/images/products/dada-gel-pack-waist.png",
     "catalogueSlide": "/images/catalogue/page_32.jpg",
     "cataloguePage": 32,
     "sizesVariants": [
@@ -687,7 +687,7 @@ export const products: Product[] = [
     "categoryName": "Hot & Cold Therapy",
     "shortDescription": "Facial contour hot/cold mask for migraine, stress relief, facial surgery, and skin rejuvenation (35x20cm).",
     "fullDescription": "DADA Face Mask Gel Pack is anatomically contoured with eye, nose, and mouth openings. Provides soothing thermal therapy for sinus pressure, migraines, cosmetic recovery, and skin puffiness.",
-    "image": "/images/products/dada-gel-pack-face-mask.jpg",
+    "image": "/images/products/dada-gel-pack-face-mask.png",
     "catalogueSlide": "/images/catalogue/page_33.jpg",
     "cataloguePage": 33,
     "sizesVariants": [
@@ -720,7 +720,7 @@ export const products: Product[] = [
     "categoryName": "Hot & Cold Therapy",
     "shortDescription": "Contoured gel bead eye compress with plush backing for dark circles, puffiness, and eye fatigue (10.5x20.5cm).",
     "fullDescription": "DADA Gel Bead Eye Mask is filled with flexible pearls that gently conform to eye sockets. Features a breathable plush velvet backing on one side and transparent cooling beads on the other.",
-    "image": "/images/products/dada-gel-pack-eye-mask.jpg",
+    "image": "/images/products/dada-gel-pack-eye-mask.png",
     "catalogueSlide": "/images/catalogue/page_34.jpg",
     "cataloguePage": 34,
     "sizesVariants": [
@@ -753,7 +753,7 @@ export const products: Product[] = [
     "categoryName": "First Aid & Safety",
     "shortDescription": "Industrial polypropylene hard-case first aid kit equipped for 10 persons (PP 21x14x7.5cm).",
     "fullDescription": "Certified 10-person workplace first aid kit housed in a durable impact-resistant polypropylene wall-mountable case with clear compartmentalized organization. Meets health and safety workplace guidelines.",
-    "image": "/images/products/first-aid-kit-10-person.jpg",
+    "image": "/images/products/first-aid-kit-10-person.png",
     "catalogueSlide": "/images/catalogue/page_51.jpg",
     "cataloguePage": 51,
     "sizesVariants": [
@@ -832,7 +832,7 @@ export const products: Product[] = [
     "categoryName": "First Aid & Safety",
     "shortDescription": "25-person portable emergency first aid station case with bilingual Arabic/English labelling.",
     "fullDescription": "A versatile 25-person emergency medical kit featuring clear bilingual Arabic and English identification labels, tailored for UAE and GCC safety compliance across commercial fleets and premises.",
-    "image": "/images/products/first-aid-kit-25-person.jpg",
+    "image": "/images/products/first-aid-kit-25-person.png",
     "sizesVariants": [
       "25 Person Capacity (PP 21x14x7.5cm)"
     ],
@@ -869,7 +869,7 @@ export const products: Product[] = [
     "categoryName": "First Aid & Safety",
     "shortDescription": "High-capacity 50-person institutional first aid station in heavy-duty casing (PP 25x25x8cm).",
     "fullDescription": "Engineered for high-occupancy corporate headquarters, manufacturing plants, logistics warehouses, and schools. Fully stocked with trauma dressings, eye wash, triangular bandages, and medical instruments for 50 people.",
-    "image": "/images/products/first-aid-kit-50-person.jpg",
+    "image": "/images/products/first-aid-kit-50-person.png",
     "catalogueSlide": "/images/catalogue/page_53.jpg",
     "cataloguePage": 53,
     "sizesVariants": [
@@ -908,7 +908,7 @@ export const products: Product[] = [
     "categoryName": "Skincare & Serums",
     "shortDescription": "Intensive skin hydration serum formulated with 100% pure Hyaluronic Acid + Vitamin C & E (30ml).",
     "fullDescription": "Dr.Care Hyaluronic Acid Serum penetrates deeply into dermal layers to replenish cellular moisture, smooth fine lines, and restore dermal suppleness. Formulated with 100% pure multi-molecular Hyaluronic Acid synergized with antioxidant Vitamin C and Vitamin E.",
-    "image": "/images/products/drcare-hyaluronic-acid-serum.jpg",
+    "image": "/images/products/drcare-hyaluronic-acid-serum.png",
     "catalogueSlide": "/images/catalogue/page_36.jpg",
     "cataloguePage": 36,
     "sizesVariants": [
@@ -945,7 +945,7 @@ export const products: Product[] = [
     "categoryName": "Skincare & Serums",
     "shortDescription": "Professional anti-aging & brightening serum with 31% Vitamin C, Astaxanthin & Hyaluronic Acid (30ml).",
     "fullDescription": "Dr.Care Vitamin Serum is a high-potency professional antioxidant brightening serum containing 31% Vitamin C, micro-algae Astaxanthin, and pure Hyaluronic Acid. Neutralizes free radicals, fades dark spots, and imparts radiant luminosity.",
-    "image": "/images/products/drcare-vitamin-serum.jpg",
+    "image": "/images/products/drcare-vitamin-serum.png",
     "catalogueSlide": "/images/catalogue/page_37.jpg",
     "cataloguePage": 37,
     "sizesVariants": [
@@ -981,7 +981,7 @@ export const products: Product[] = [
     "categoryName": "Skincare & Serums",
     "shortDescription": "High-strength 10% Niacinamide + Zinc 2% vitamin & mineral blemish clarity formula (30ml).",
     "fullDescription": "Dr.Care Niacinamide Serum combines 10% pure Vitamin B3 (Niacinamide) with 2% Zinc PCA. Regulates sebum production, minimizes enlarged pore appearance, calms redness, and visibly clarifies congested skin.",
-    "image": "/images/products/drcare-niacinamide-serum.jpg",
+    "image": "/images/products/drcare-niacinamide-serum.png",
     "catalogueSlide": "/images/catalogue/page_38.jpg",
     "cataloguePage": 38,
     "sizesVariants": [
@@ -1017,7 +1017,7 @@ export const products: Product[] = [
     "categoryName": "Medical Devices",
     "shortDescription": "Clinical flex-tip digital thermometer with fever alarm, memory recall, and 1-year warranty.",
     "fullDescription": "Mediz DMT-4333 is a medical-grade digital thermometer delivering rapid, lab-accurate temperature readings. Features a gentle flexible probe tip, auditory beep indicator, fever alarm signal, auto power-off, and protective storage case.",
-    "image": "/images/products/mediz-digital-thermometer.jpg",
+    "image": "/images/products/mediz-digital-thermometer.png",
     "catalogueSlide": "/images/catalogue/page_40.jpg",
     "cataloguePage": 40,
     "sizesVariants": [
@@ -1096,7 +1096,7 @@ export const products: Product[] = [
     "categoryName": "Hair Care",
     "shortDescription": "Botanical infused sulfate-free & paraben-free strengthening shampoo infused with Biotin (480ml).",
     "fullDescription": "Rosemary Mint Strengthening Shampoo gently cleanses while revitalizing weak and brittle hair. Infused with pure rosemary essential oil, invigorating mint, and hair-building Biotin to stimulate follicles and encourage longer, healthier hair growth.",
-    "image": "/images/products/rosemary-mint-shampoo.jpg",
+    "image": "/images/products/rosemary-mint-shampoo.png",
     "catalogueSlide": "/images/catalogue/page_44.jpg",
     "cataloguePage": 44,
     "sizesVariants": [
@@ -1136,7 +1136,7 @@ export const products: Product[] = [
     "categoryName": "Hair Care",
     "shortDescription": "Botanical infused vegan conditioner that strengthens, detangles, and repairs damaged hair (480ml).",
     "fullDescription": "Rosemary Mint Strengthening Conditioner provides intensive strand hydration without weighing hair down. Formulated without sulfates or parabens, it locks in moisture, seals cuticles, and prevents breakage.",
-    "image": "/images/products/rosemary-mint-conditioner.jpg",
+    "image": "/images/products/rosemary-mint-conditioner.png",
     "catalogueSlide": "/images/catalogue/page_45.jpg",
     "cataloguePage": 45,
     "sizesVariants": [
@@ -1174,7 +1174,7 @@ export const products: Product[] = [
     "categoryName": "Hair Care",
     "shortDescription": "Concentrated scalp strengthening oil blend with herbal essences for reviving smooth hair (60ml).",
     "fullDescription": "Rosemary Mint Blend Scalp & Hair Strengthening Oil is an intensive, nutrient-rich botanical treatment formulated to nourish the scalp roots, soothe dryness, tame split ends, and promote healthy density.",
-    "image": "/images/products/rosemary-mint-oil.jpg",
+    "image": "/images/products/rosemary-mint-oil.png",
     "catalogueSlide": "/images/catalogue/page_46.jpg",
     "cataloguePage": 46,
     "sizesVariants": [
@@ -1212,7 +1212,7 @@ export const products: Product[] = [
     "categoryName": "Hair Care",
     "shortDescription": "Deep conditioning vegan botanical hair masque for intensive nourish and smooth restoration (380ml).",
     "fullDescription": "Rosemary Mint Strengthening Hair Masque is a rich restorative deep-treatment masque developed to infuse dry, heat-damaged, or over-processed hair with intense nutrients and hydration.",
-    "image": "/images/products/rosemary-mint-masque.jpg",
+    "image": "/images/products/rosemary-mint-masque.png",
     "catalogueSlide": "/images/catalogue/page_47.jpg",
     "cataloguePage": 47,
     "sizesVariants": [
@@ -1248,7 +1248,7 @@ export const products: Product[] = [
     "categoryName": "Sun Care",
     "shortDescription": "Non-comedogenic broad spectrum SPF 50+ face & body sunscreen delivering 98% UV protection (100ml).",
     "fullDescription": "Dermavia Sun Cream SPF 50+ for Acne Prone Skin delivers very high broad-spectrum UVA and UVB defense with 98% UV protection. Its ultra-light matte finish prevents clogged pores and controls excess shine throughout hot UAE and GCC sun exposure.",
-    "image": "/images/products/dermavia-sun-cream-acne.jpg",
+    "image": "/images/products/dermavia-sun-cream-acne.png",
     "catalogueSlide": "/images/catalogue/page_48.jpg",
     "cataloguePage": 48,
     "sizesVariants": [
@@ -1284,7 +1284,7 @@ export const products: Product[] = [
     "categoryName": "Sun Care",
     "shortDescription": "High protection SPF 50+ sunscreen targeting discoloration and blemishes with 98% UV defense (100ml).",
     "fullDescription": "Dermavia Sun Cream SPF 50+ Anti-Blemish shields against sun-induced hyperpigmentation, melasma, and dark marks. Combines 98% UV protection with clarifying botanical actives for a smooth, even tone.",
-    "image": "/images/products/dermavia-sun-cream-anti-blemish.jpg",
+    "image": "/images/products/dermavia-sun-cream-anti-blemish.png",
     "catalogueSlide": "/images/catalogue/page_49.jpg",
     "cataloguePage": 49,
     "sizesVariants": [
@@ -1319,7 +1319,7 @@ export const products: Product[] = [
     "categoryName": "Sun Care",
     "shortDescription": "Hypoallergenic fragrance-free SPF 50+ sunscreen formulated for delicate and sensitive skin (100ml).",
     "fullDescription": "Dermavia Sun Cream SPF 50+ for Sensitive Skin provides gentle yet robust mineral and organic UV filters offering 98% UV protection. Hypoallergenic, alcohol-free, and dermatologically tested to soothe redness while shielding against solar radiation.",
-    "image": "/images/products/dermavia-sun-cream-sensitive.jpg",
+    "image": "/images/products/dermavia-sun-cream-sensitive.png",
     "catalogueSlide": "/images/catalogue/page_50.jpg",
     "cataloguePage": 50,
     "sizesVariants": [
@@ -1354,7 +1354,7 @@ export const products: Product[] = [
     "categoryName": "Cooling Products",
     "shortDescription": "Color-changing cooling gel patch with thermochromic technology lasting up to 8 hours (4 patches/box).",
     "fullDescription": "Just+ Fever Cooling Patch features advanced thermochromic technology that visibly shifts color based on body temperature: shifts from normal temperature (37°C purple) to elevated temperature (38°C pink). Recommended by pediatricians after vaccination and during acute fever episodes.",
-    "image": "/images/products/just-fever-cooling-patch.jpg",
+    "image": "/images/products/just-fever-cooling-patch.png",
     "catalogueSlide": "/images/catalogue/page_39.jpg",
     "cataloguePage": 39,
     "sizesVariants": [
@@ -1391,7 +1391,7 @@ export const products: Product[] = [
     "categoryName": "Healthcare Accessories",
     "shortDescription": "Precision carbon steel healthcare grooming nail clippers with anti-splash cover (12 pcs/box).",
     "fullDescription": "V9 High Quality Nail Clippers are forged from premium carbon steel for long-lasting edge sharpness and clean, effortless trimming. Engineered for hygienic personal and clinical nail grooming.",
-    "image": "/images/products/v9-nail-clippers.jpg",
+    "image": "/images/products/v9-nail-clippers.png",
     "catalogueSlide": "/images/catalogue/page_43.jpg",
     "cataloguePage": 43,
     "sizesVariants": [
@@ -1412,6 +1412,385 @@ export const products: Product[] = [
     "applications": [
       "Personal grooming",
       "Hospitality & clinical care hygiene"
+    ]
+  },
+  {
+    "id": "mediz-blood-pressure-monitor",
+    "slug": "mediz-blood-pressure-monitor",
+    "name": "Mediz Digital Blood Pressure Monitor",
+    "brandId": "mediz",
+    "brandName": "Mediz",
+    "brandType": "owned",
+    "categoryId": "medical-devices",
+    "categoryName": "Medical Devices",
+    "shortDescription": "Automatic upper-arm blood pressure monitor with large LCD, pulse reading and a 22–42 cm cuff.",
+    "fullDescription": "The Mediz digital blood pressure monitor gives one-touch systolic, diastolic and pulse readings on a large LCD with time display. It ships with a soft wide-range upper-arm cuff (22–42 cm / 8.7–16.5 in) for accurate home and clinic monitoring, with user selection and reading memory.",
+    "image": "/images/products/mediz-blood-pressure-monitor.png",
+    "sizesVariants": [
+      "Upper-Arm Monitor with 22–42 cm Cuff"
+    ],
+    "packagingSpecs": {
+      "box": "1 Monitor + 1 Upper-Arm Cuff",
+      "dimensions": "Cuff fits 22–42 cm (8.7–16.5 in) arm"
+    },
+    "features": [
+      "One-Button Start / Stop Measurement",
+      "Systolic, Diastolic & Pulse on a Large LCD",
+      "Reading Memory with Recall Button",
+      "Multi-User Selection",
+      "Wide-Range 22–42 cm Upper-Arm Cuff",
+      "Time Display"
+    ],
+    "applications": [
+      "Daily home blood pressure monitoring",
+      "Clinics, pharmacies & elderly care"
+    ],
+    "isFeatured": true
+  },
+  {
+    "id": "mediz-mesh-nebulizer",
+    "slug": "mediz-mesh-nebulizer",
+    "name": "Mediz Portable Mesh Nebulizer",
+    "brandId": "mediz",
+    "brandName": "Mediz",
+    "brandType": "owned",
+    "categoryId": "medical-devices",
+    "categoryName": "Medical Devices",
+    "shortDescription": "Silent, USB-rechargeable handheld mesh nebulizer with mask, for effective respiratory care at any age.",
+    "fullDescription": "The Mediz Mesh Nebulizer uses advanced mesh technology to turn medication into a fine, consistent mist for better respiratory care. Compact, lightweight and near-silent, it runs on one-button operation and recharges by USB, making it ideal for home, travel and children.",
+    "image": "/images/products/mediz-mesh-nebulizer.png",
+    "sizesVariants": [
+      "Handheld Nebulizer Kit with Mask"
+    ],
+    "packagingSpecs": {
+      "box": "1 Nebulizer Kit with Face Mask"
+    },
+    "features": [
+      "Advanced Mesh Technology",
+      "Silent Operation",
+      "USB Rechargeable",
+      "One-Button Operation",
+      "Portable & Lightweight",
+      "Easy to Clean & Maintain",
+      "Suitable for All Ages"
+    ],
+    "certifications": [
+      "CE Marked",
+      "RoHS Compliant"
+    ],
+    "applications": [
+      "Asthma & respiratory therapy at home",
+      "Travel and paediatric use"
+    ],
+    "isFeatured": true
+  },
+  {
+    "id": "mediz-pregna-clear-cassette",
+    "slug": "mediz-pregna-clear-cassette",
+    "name": "Mediz Pregna Clear HCG Pregnancy Test — Cassette",
+    "brandId": "mediz",
+    "brandName": "Mediz",
+    "brandType": "owned",
+    "categoryId": "medical-devices",
+    "categoryName": "Medical Devices",
+    "shortDescription": "Cassette-format HCG pregnancy test with clear positive / negative / invalid result window. 1 test per box.",
+    "fullDescription": "Pregna Clear Cassette is a rapid in-vitro diagnostic HCG pregnancy test in cassette format. Add the sample to the S well and read clear C and T lines in minutes, with the result guide printed on every box.",
+    "image": "/images/products/mediz-pregna-clear-cassette.png",
+    "sizesVariants": [
+      "Cassette — 1 Test"
+    ],
+    "packagingSpecs": {
+      "box": "1 Test per Box"
+    },
+    "features": [
+      "Cassette Format with Sample Well",
+      "Clear Control (C) & Test (T) Lines",
+      "Positive / Negative / Invalid Guide on Pack",
+      "Rapid HCG Detection"
+    ],
+    "certifications": [
+      "For In-Vitro Diagnostic Use (IVD)"
+    ],
+    "applications": [
+      "Home pregnancy testing",
+      "Pharmacy & clinic screening"
+    ]
+  },
+  {
+    "id": "mediz-pregna-clear-midstream",
+    "slug": "mediz-pregna-clear-midstream",
+    "name": "Mediz Pregna Clear HCG Pregnancy Test — Midstream",
+    "brandId": "mediz",
+    "brandName": "Mediz",
+    "brandType": "owned",
+    "categoryId": "medical-devices",
+    "categoryName": "Medical Devices",
+    "shortDescription": "Easy midstream HCG pregnancy test with a comfortable grip and clear result window. 1 test per box.",
+    "fullDescription": "Pregna Clear Midstream is a rapid in-vitro diagnostic HCG pregnancy test designed for simple midstream use. The ergonomic handle and protective cap make testing easy, and the result window shows clear C and T lines.",
+    "image": "/images/products/mediz-pregna-clear-midstream.png",
+    "sizesVariants": [
+      "Midstream — 1 Test"
+    ],
+    "packagingSpecs": {
+      "box": "1 Test per Box"
+    },
+    "features": [
+      "Midstream Format — No Cup Needed",
+      "Ergonomic Handle with Protective Cap",
+      "Clear Control (C) & Test (T) Lines",
+      "Result Guide Printed on Pack",
+      "Store at 4°C – 30°C"
+    ],
+    "certifications": [
+      "For In-Vitro Diagnostic Use (IVD)"
+    ],
+    "applications": [
+      "Home pregnancy testing",
+      "Pharmacy retail"
+    ]
+  },
+  {
+    "id": "dada-n95-mask",
+    "slug": "dada-n95-mask",
+    "name": "DADA N95 Disposable Particulate Respiratory Mask",
+    "brandId": "dada",
+    "brandName": "DADA",
+    "brandType": "owned",
+    "categoryId": "personal-care-hygiene",
+    "categoryName": "Personal Care & Hygiene",
+    "shortDescription": "Black fish-type N95 / KF94 respirator made from non-woven and meltblown fabric. 10 pcs per box.",
+    "fullDescription": "DADA N95 disposable particulate respiratory masks are made to standard GB2626-2019 with a multi-layer non-woven and meltblown filter in a comfortable 3D fish-type (KF94 style) shape with soft ear loops.",
+    "image": "/images/products/dada-n95-mask.png",
+    "sizesVariants": [
+      "Black — 10 pcs Box"
+    ],
+    "packagingSpecs": {
+      "box": "10 pcs per Box",
+      "material": "Non-woven fabric + Meltblown fabric",
+      "dimensions": "210 x 81 mm"
+    },
+    "features": [
+      "N95 / KF94 Filtration Class",
+      "Non-Woven + Meltblown Multi-Layer Filter",
+      "3D Fish-Type Shape for Better Fit",
+      "Soft Elastic Ear Loops",
+      "Single-Use Disposable"
+    ],
+    "certifications": [
+      "Standard GB2626-2019"
+    ],
+    "applications": [
+      "Daily personal protection",
+      "Healthcare, industrial & public settings"
+    ]
+  },
+  {
+    "id": "first-aid-kit-100-person",
+    "slug": "first-aid-kit-100-person",
+    "name": "First Aid Kit — 100 Person",
+    "brandId": "dada",
+    "brandName": "DADA",
+    "brandType": "owned",
+    "categoryId": "first-aid-safety",
+    "categoryName": "First Aid & Safety",
+    "shortDescription": "Largest-capacity 100-person first aid station in a heavy-duty case.",
+    "fullDescription": "Built for large workplaces, schools and public facilities, the 100-person kit tops the first aid range with the highest capacity in a sturdy white case with secure latches.",
+    "image": "/images/products/first-aid-kit-100-person.png",
+    "sizesVariants": [
+      "100 Person Capacity"
+    ],
+    "packagingSpecs": {
+      "box": "100 Person Kit"
+    },
+    "features": [
+      "Highest Capacity in the Range — 100 People",
+      "Heavy-Duty Case with Secure Latches",
+      "Clearly Marked for Fast Access",
+      "Organised Compartments"
+    ],
+    "applications": [
+      "Factories & warehouses",
+      "Schools & large offices",
+      "Public facilities"
+    ]
+  },
+  {
+    "id": "starmed-instant-ice-pack",
+    "slug": "starmed-instant-ice-pack",
+    "name": "Instant Ice Pack",
+    "brandId": "starmed",
+    "brandName": "STARMED",
+    "brandType": "owned",
+    "categoryId": "hot-cold-therapy",
+    "categoryName": "Hot & Cold Therapy",
+    "shortDescription": "Single-use instant cold pack — squeeze, shake and apply. No freezer needed.",
+    "fullDescription": "Instant Ice Packs deliver immediate cold therapy anywhere: squeeze the bag to break the inner pouch, shake well, and apply to the affected area to reduce swelling and pain. Ideal for first aid kits, sports and travel.",
+    "image": "/images/products/starmed-instant-ice-pack.png",
+    "sizesVariants": [
+      "Single-Use Pouch"
+    ],
+    "packagingSpecs": {
+      "box": "1 Pouch"
+    },
+    "features": [
+      "Instant Cold — No Freezer Needed",
+      "Simple Squeeze, Shake & Apply",
+      "Single-Use & Disposable",
+      "Compact for First Aid Kits"
+    ],
+    "applications": [
+      "Sports injuries & sprains",
+      "First aid kits",
+      "Swelling & bruise relief"
+    ]
+  },
+  {
+    "id": "max-health-dental-floss-picks",
+    "slug": "max-health-dental-floss-picks",
+    "name": "Max Health Dental Floss Picks",
+    "brandId": "max-health",
+    "brandName": "Max Health",
+    "brandType": "range",
+    "categoryId": "personal-care-hygiene",
+    "categoryName": "Personal Care & Hygiene",
+    "shortDescription": "Dental floss picks that clean between teeth, remove plaque and freshen breath — 50 pcs travel case or 200 pcs value pack.",
+    "fullDescription": "Max Health Dental Floss Picks combine strong floss with an easy-grip handle for everyday interdental cleaning. Available in a 50-piece travel case and a 200-piece value pack.",
+    "image": "/images/products/max-health-dental-floss-picks.png",
+    "sizesVariants": [
+      "50 pcs Travel Case",
+      "200 pcs Value Pack"
+    ],
+    "packagingSpecs": {
+      "box": "50 pcs (Travel Case) / 200 pcs (Value Pack)"
+    },
+    "features": [
+      "Cleans Between Teeth",
+      "Removes Plaque",
+      "Freshens Breath",
+      "Travel Case Included (50 pcs)"
+    ],
+    "applications": [
+      "Daily oral hygiene",
+      "Travel & on-the-go"
+    ]
+  },
+  {
+    "id": "starmed-shower-chair",
+    "slug": "starmed-shower-chair",
+    "name": "Adjustable Shower Chair",
+    "brandId": "starmed",
+    "brandName": "STARMED",
+    "brandType": "owned",
+    "categoryId": "home-healthcare",
+    "categoryName": "Home Healthcare",
+    "shortDescription": "Height-adjustable aluminium shower stool with drainage holes, hand grips and non-slip rubber feet.",
+    "fullDescription": "A stable bathing seat for elderly, post-surgery and limited-mobility users. The contoured seat has drainage holes and built-in hand grips, on aluminium legs with push-button height adjustment and non-slip rubber tips.",
+    "image": "/images/products/starmed-shower-chair.png",
+    "sizesVariants": [
+      "Height-Adjustable Stool"
+    ],
+    "packagingSpecs": {
+      "material": "Aluminium frame, moulded plastic seat"
+    },
+    "features": [
+      "Push-Button Height Adjustment",
+      "Contoured Seat with Drainage Holes",
+      "Built-In Hand Grips",
+      "Non-Slip Rubber Feet",
+      "Lightweight Aluminium Legs"
+    ],
+    "applications": [
+      "Bathroom safety for elderly",
+      "Post-surgery & rehabilitation care"
+    ]
+  },
+  {
+    "id": "starmed-walking-stick",
+    "slug": "starmed-walking-stick",
+    "name": "Adjustable Walking Stick",
+    "brandId": "starmed",
+    "brandName": "STARMED",
+    "brandType": "owned",
+    "categoryId": "home-healthcare",
+    "categoryName": "Home Healthcare",
+    "shortDescription": "Lightweight height-adjustable aluminium walking cane with comfortable T-handle. Black and silver.",
+    "fullDescription": "A lightweight single-point walking stick with a comfortable T-shaped handle, push-button height adjustment and a non-slip rubber tip for everyday mobility support.",
+    "image": "/images/products/starmed-walking-stick.png",
+    "sizesVariants": [
+      "Black",
+      "Silver"
+    ],
+    "packagingSpecs": {
+      "material": "Aluminium shaft, rubber tip"
+    },
+    "features": [
+      "Push-Button Height Adjustment",
+      "Ergonomic T-Handle Grip",
+      "Lightweight Aluminium",
+      "Non-Slip Rubber Tip"
+    ],
+    "applications": [
+      "Daily mobility support",
+      "Elderly & rehabilitation care"
+    ]
+  },
+  {
+    "id": "starmed-quad-cane",
+    "slug": "starmed-quad-cane",
+    "name": "Quad Cane",
+    "brandId": "starmed",
+    "brandName": "STARMED",
+    "brandType": "owned",
+    "categoryId": "home-healthcare",
+    "categoryName": "Home Healthcare",
+    "shortDescription": "Four-point base quad cane for extra stability, with height adjustment and soft black grip.",
+    "fullDescription": "The quad cane's four-legged base stands on its own and gives more stability than a single-point stick, ideal for users who need extra balance support. Height-adjustable bronze aluminium shaft with a comfortable black grip.",
+    "image": "/images/products/starmed-quad-cane.png",
+    "sizesVariants": [
+      "Bronze"
+    ],
+    "packagingSpecs": {
+      "material": "Aluminium shaft, rubber feet"
+    },
+    "features": [
+      "Four-Point Base — Stands Unaided",
+      "Push-Button Height Adjustment",
+      "Soft Comfortable Grip",
+      "Non-Slip Rubber Feet"
+    ],
+    "applications": [
+      "Balance & stability support",
+      "Stroke & rehabilitation recovery"
+    ]
+  },
+  {
+    "id": "starmed-walker-with-seat",
+    "slug": "starmed-walker-with-seat",
+    "name": "Folding Walker with Seat",
+    "brandId": "starmed",
+    "brandName": "STARMED",
+    "brandType": "owned",
+    "categoryId": "home-healthcare",
+    "categoryName": "Home Healthcare",
+    "shortDescription": "Foldable aluminium walking frame with fold-down seat, padded grips and adjustable height.",
+    "fullDescription": "A lightweight aluminium walking frame that folds for storage and transport, with a fold-down seat for resting, soft hand grips and height-adjustable legs on non-slip rubber tips.",
+    "image": "/images/products/starmed-walker-with-seat.png",
+    "sizesVariants": [
+      "Silver — with Fold-Down Seat"
+    ],
+    "packagingSpecs": {
+      "material": "Aluminium frame"
+    },
+    "features": [
+      "Fold-Down Rest Seat",
+      "Foldable Frame for Storage & Travel",
+      "Height-Adjustable Legs",
+      "Padded Hand Grips",
+      "Non-Slip Rubber Tips"
+    ],
+    "applications": [
+      "Elderly mobility at home",
+      "Post-surgery & rehabilitation"
     ]
   }
 ];

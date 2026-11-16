@@ -1,173 +1,272 @@
 "use client";
 
-import { motion, useMotionValue, useSpring, useTransform } from "motion/react";
+import { motion, useTransform, type MotionValue } from "motion/react";
 import { BadgeCheck, Landmark, MessageCircle, Store } from "lucide-react";
-import Image from "next/image";
-import type { MouseEvent } from "react";
+import { useRef } from "react";
 import { Button } from "@/components/ui/Button";
-import { PulseLine } from "@/components/ui/PulseLine";
-import { TextReveal } from "@/components/ui/TextReveal";
+import {
+  EcgBackdrop,
+  FloatingPackshot,
+  heroEase as ease,
+  HoloPedestal,
+  HudChip,
+  OrbitRings,
+  ScrollCue,
+  TiltPackshot,
+  useHeroMotion,
+} from "@/components/ui/HeroFx";
+import { Magnetic } from "@/components/ui/Magnetic";
+import { ParticleField } from "@/components/ui/ParticleField";
+import { Scramble } from "@/components/ui/Scramble";
 import { introDelay } from "@/lib/boot";
 import { generalEnquiry } from "@/lib/whatsapp";
 
 const credentials = [
   { icon: BadgeCheck, label: "CE 0123 & ISO 13485" },
-  { icon: Landmark, label: "Ministry of Health Registered" },
+  { icon: Landmark, label: "MOH Registered" },
   { icon: Store, label: "2,000+ Outlets" },
 ];
 
-const cards = [
+/** Headline lines: alternate lines are indented, and each drifts its own way on scroll. */
+const lines = [
+  { text: "Healthcare that", drift: -60, indent: false, accent: false },
+  { text: "protects", drift: 50, indent: true, accent: true },
+  { text: "every life.", drift: -24, indent: false, accent: false },
+];
+
+const hero = {
+  src: "/images/products/drcare-vitamin-serum.png",
+  alt: "Dr.Care Vitamin C Serum with its retail box",
+  w: 1274,
+  h: 1234,
+};
+
+const satellites = [
   {
-    src: "/images/products/first-aid-kit-50-person.jpg",
-    alt: "First aid kit for 50 people",
-    w: 440,
-    h: 380,
-    className: "left-0 top-[12%] w-[56%] -rotate-6",
-    depth: 26,
-    float: 0,
+    item: {
+      src: "/images/products/rosemary-mint-shampoo.png",
+      alt: "Dr.Care Rosemary Mint Strengthening Shampoo",
+      w: 1024,
+      h: 1536,
+    },
+    className: "left-[0%] top-[2%] w-[24%] -z-10",
+    depth: 0.5,
+    lift: -200,
+    delay: 0.35,
   },
   {
-    src: "/images/products/drcare-hyaluronic-acid-serum.jpg",
-    alt: "Dr.Care Hyaluronic Acid Serum",
-    w: 440,
-    h: 600,
-    className: "right-0 top-0 w-[46%] rotate-3",
-    depth: 48,
-    float: 0.8,
+    item: {
+      src: "/images/products/first-aid-kit-50-person.png",
+      alt: "STARMED first aid kit for 50 people",
+      w: 784,
+      h: 664,
+    },
+    className: "bottom-[4%] right-[-4%] w-[36%] z-10",
+    depth: 1.1,
+    lift: -320,
+    delay: 0.47,
   },
   {
-    src: "/images/products/dermavia-sun-cream-acne.jpg",
-    alt: "Dermavia SPF 50+ sun cream",
-    w: 449,
-    h: 620,
-    className: "bottom-0 left-[28%] w-[42%] rotate-2",
-    depth: 70,
-    float: 1.6,
+    item: {
+      src: "/images/products/dada-gel-pack-eye-mask.png",
+      alt: "DADA hot and cold gel bead eye mask",
+      w: 1197,
+      h: 1315,
+    },
+    className: "bottom-[8%] left-[-2%] w-[25%] z-10",
+    depth: 0.8,
+    lift: -260,
+    delay: 0.59,
   },
 ];
 
-function FloatingCard({
-  card,
-  mx,
-  my,
+function HeadlineLine({
+  line,
+  index,
+  progress,
+  start,
+  still,
 }: {
-  card: (typeof cards)[number];
-  mx: ReturnType<typeof useSpring>;
-  my: ReturnType<typeof useSpring>;
+  line: (typeof lines)[number];
+  index: number;
+  progress: MotionValue<number>;
+  start: number;
+  still: boolean;
 }) {
-  const x = useTransform(mx, (v) => v * card.depth);
-  const y = useTransform(my, (v) => v * card.depth);
-  const delay = introDelay() + 0.3 + card.float * 0.15;
-
+  const x = useTransform(progress, [0, 1], [0, still ? 0 : line.drift]);
   return (
-    <motion.div style={{ x, y }} className={`absolute ${card.className}`}>
-      <motion.div
-        initial={{ opacity: 0, y: 60, scale: 0.92 }}
-        animate={{ opacity: 1, y: [0, -12, 0], scale: 1 }}
-        transition={{
-          opacity: { duration: 1, delay },
-          scale: { duration: 1.2, delay, ease: [0.22, 1, 0.36, 1] },
-          y: { duration: 7, repeat: Infinity, ease: "easeInOut", delay: card.float },
-        }}
+    <motion.span
+      style={{ x }}
+      className={`-mb-[0.08em] block overflow-hidden pb-[0.08em] ${line.indent ? "lg:pl-[0.9em]" : ""}`}
+    >
+      <motion.span
+        className={`relative block ${line.accent ? "text-spectrum w-fit pr-[0.12em] italic" : ""}`}
+        initial={{ y: "110%", rotate: 4 }}
+        animate={{ y: "0%", rotate: 0 }}
+        transition={{ duration: 1.3, delay: start + index * 0.1, ease }}
       >
-        <Image
-          src={card.src}
-          alt={card.alt}
-          width={card.w}
-          height={card.h}
-          priority
-          sizes="(min-width: 1024px) 300px, 45vw"
-          className="w-full rounded-3xl shadow-[0_40px_80px_-24px_rgba(0,0,0,0.65)] ring-1 ring-white/15"
-        />
-      </motion.div>
-    </motion.div>
+        {line.accent && (
+          <span aria-hidden className="absolute -left-[0.9em] top-1/2 hidden h-px w-[0.7em] bg-gradient-to-r from-transparent to-cyan lg:block" />
+        )}
+        {line.text}
+      </motion.span>
+    </motion.span>
   );
 }
 
 export function Hero() {
-  const rawX = useMotionValue(0);
-  const rawY = useMotionValue(0);
-  const mx = useSpring(rawX, { stiffness: 60, damping: 18 });
-  const my = useSpring(rawY, { stiffness: 60, damping: 18 });
-
-  const onMove = (e: MouseEvent<HTMLElement>) => {
-    const rect = e.currentTarget.getBoundingClientRect();
-    rawX.set((e.clientX - rect.left) / rect.width - 0.5);
-    rawY.set((e.clientY - rect.top) / rect.height - 0.5);
-  };
-
+  const ref = useRef<HTMLElement>(null);
+  const { still, px, py, progress, onPointerMove } = useHeroMotion(ref);
   const start = introDelay();
+
+  const drift = still ? 0 : 1;
+  const h1Y = useTransform(progress, [0, 1], ["0%", `${-30 * drift}%`]);
+  const subY = useTransform(progress, [0, 0.6], [0, -80 * drift]);
+  const subOpacity = useTransform(progress, [0, 0.6], [1, still ? 1 : 0]);
+  const stageY = useTransform(progress, [0, 1], [0, -120 * drift]);
+  const stageScale = useTransform(progress, [0, 1], [1, still ? 1 : 0.88]);
+  const glowX = useTransform(px, (v) => v * 60);
+  const glowY = useTransform(py, (v) => v * 40);
 
   return (
     <section
-      onMouseMove={onMove}
-      className="relative isolate flex min-h-svh flex-col justify-center overflow-hidden bg-ink text-white"
+      ref={ref}
+      onPointerMove={onPointerMove}
+      className="relative isolate flex min-h-svh flex-col overflow-hidden bg-void text-fg"
     >
-      <div className="pattern-cross mask-fade absolute inset-0 -z-10" />
-      <div className="aurora absolute -left-40 -top-40 -z-10 size-[46rem] rounded-full bg-indigo blur-[130px]" />
-      <div
-        className="aurora absolute -bottom-52 right-0 -z-10 size-[34rem] rounded-full bg-lime/25 blur-[130px]"
-        style={{ animationDelay: "-8s" }}
-      />
+      {/* ── Background layers ── */}
+      <div className="grid-lines mask-fade absolute inset-0 -z-30 opacity-70" />
+      <ParticleField className="-z-20" />
+      <motion.div style={{ x: glowX, y: glowY }} className="orb -left-48 -top-48 -z-20 size-[48rem] bg-violet/35" />
+      <div className="orb -right-32 top-1/4 -z-20 size-[36rem] bg-cyan/20" style={{ animationDelay: "-6s" }} />
+      <div className="orb -bottom-60 left-1/3 -z-20 size-[30rem] bg-lime/15" style={{ animationDelay: "-10s" }} />
+      <div className="pointer-events-none absolute inset-x-0 bottom-0 -z-20 h-[45%] overflow-hidden opacity-60" aria-hidden>
+        <div className="floor-grid" />
+      </div>
+      <EcgBackdrop progress={progress} start={start} still={still} />
 
-      <div className="mx-auto grid w-full max-w-7xl items-center gap-12 px-5 pb-28 pt-32 sm:px-8 lg:grid-cols-[1.15fr_1fr] lg:pb-32 lg:pt-36">
-        <div>
-          <motion.p
-            className="eyebrow text-lime-bright"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: start, duration: 0.8 }}
-          >
-            Official B2B Healthcare Distribution
-          </motion.p>
-
-          <h1 className="mt-5 text-[clamp(3.2rem,7.2vw,6rem)] font-semibold leading-[0.98]">
-            <TextReveal text="Healthcare That" immediate />
-            <br />
-            <TextReveal text="Protects" immediate delay={0.16} className="text-lime-bright" />
-            <br />
-            <TextReveal text="Every Life" immediate delay={0.24} />
-          </h1>
-
+      {/* ── Content ── */}
+      <div className="mx-auto grid w-full max-w-7xl flex-1 items-center gap-6 px-5 pt-28 sm:px-8 lg:grid-cols-[1.05fr_1fr] lg:gap-[2vw] lg:pt-32">
+        <div className="relative z-10">
           <motion.div
-            initial={{ opacity: 0, y: 24 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: start + 0.5, duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
+            className="glass inline-flex items-center gap-3 rounded-full py-1.5 pl-1.5 pr-4"
+            initial={{ opacity: 0, y: 12, filter: "blur(8px)" }}
+            animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
+            transition={{ delay: start, duration: 0.8, ease }}
           >
-            <p className="mt-7 max-w-xl text-lg leading-relaxed text-white/75">
-              <span className="font-semibold text-white">Smart. Certified. Reliable.</span> STARMED
-              General Trading LLC supplies hospitals, pharmacies &amp; retail chains across UAE
-              &amp; GCC.
-            </p>
-            <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-              <Button href="/products">Explore Catalogue</Button>
-              <Button
-                href={generalEnquiry}
-                variant="outline"
-                icon={<MessageCircle className="size-4" aria-hidden />}
-              >
-                Enquire on WhatsApp
-              </Button>
-            </div>
-            <ul className="mt-10 flex flex-wrap gap-x-6 gap-y-3 text-sm text-white/75">
-              {credentials.map(({ icon: Icon, label }) => (
-                <li key={label} className="flex items-center gap-2">
-                  <Icon className="size-4 text-lime-bright" aria-hidden />
-                  {label}
-                </li>
-              ))}
-            </ul>
+            <span className="rounded-full bg-cyan/15 px-2.5 py-1 font-mono text-[10px] font-semibold uppercase tracking-widest text-cyan">
+              B2B
+            </span>
+            <span className="eyebrow text-fg/80">
+              <Scramble text="Official B2B Healthcare Distribution" delay={start} />
+            </span>
+          </motion.div>
+
+          <motion.h1
+            style={{ y: h1Y }}
+            className="mt-7 text-[clamp(2.9rem,5.6vw,5.8rem)] font-semibold leading-[0.95] tracking-[-0.045em] lg:whitespace-nowrap"
+          >
+            {lines.map((line, i) => (
+              <HeadlineLine key={line.text} line={line} index={i} progress={progress} start={start} still={still} />
+            ))}
+          </motion.h1>
+
+          <motion.div style={{ y: subY, opacity: subOpacity }} className="mt-9 flex flex-col gap-8">
+            <motion.p
+              className="max-w-[40ch] text-lg leading-relaxed text-dim"
+              initial={{ opacity: 0, y: 24, filter: "blur(8px)" }}
+              animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
+              transition={{ delay: start + 0.6, duration: 1.1, ease }}
+            >
+              <span className="font-semibold text-fg">Smart. Certified. Reliable.</span> STARMED supplies
+              hospitals, pharmacies &amp; retail chains across the UAE &amp; GCC.
+            </motion.p>
+            <motion.div
+              className="flex flex-col gap-3 sm:flex-row"
+              initial={{ opacity: 0, y: 24 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: start + 0.7, duration: 1.1, ease }}
+            >
+              <Magnetic>
+                <Button href="/products">Explore Catalogue</Button>
+              </Magnetic>
+              <Magnetic>
+                <Button href={generalEnquiry} variant="glass" icon={<MessageCircle className="size-3.5" aria-hidden />}>
+                  Enquire on WhatsApp
+                </Button>
+              </Magnetic>
+            </motion.div>
           </motion.div>
         </div>
 
-        <div className="relative mx-auto aspect-square w-full max-w-[34rem]">
-          {cards.map((card) => (
-            <FloatingCard key={card.src} card={card} mx={mx} my={my} />
+        {/* ── Product stage ── */}
+        <motion.div
+          style={{ y: stageY, scale: stageScale }}
+          className="relative mx-auto aspect-[1/0.9] w-full max-w-[38rem] [perspective:1400px] lg:aspect-auto lg:h-[min(72vh,680px)]"
+        >
+          <OrbitRings px={px} start={start} />
+          <HoloPedestal px={px} />
+          {satellites.map((s) => (
+            <FloatingPackshot
+              key={s.item.src}
+              {...s}
+              className={`hidden sm:block ${s.className}`}
+              px={px}
+              progress={progress}
+              start={start}
+              still={still}
+            />
           ))}
-        </div>
+          <div className="absolute inset-x-[12%] top-1/2 -translate-y-1/2 sm:inset-x-[20%]">
+            <TiltPackshot item={hero} px={px} py={py} start={start} still={still} priority />
+          </div>
+
+          {credentials.map(({ icon: Icon, label }, i) => (
+            <HudChip
+              key={label}
+              start={start}
+              delay={1 + i * 0.15}
+              className={
+                [
+                  "right-[2%] top-[10%] hidden sm:block",
+                  "left-[-4%] top-[44%] hidden lg:block",
+                  "right-[6%] bottom-[34%] hidden sm:block",
+                ][i]
+              }
+            >
+              <span className="grid size-6 place-items-center rounded-full bg-cyan/15">
+                <Icon className="size-3.5 text-cyan" aria-hidden />
+              </span>
+              {label}
+            </HudChip>
+          ))}
+        </motion.div>
       </div>
 
-      <PulseLine className="absolute inset-x-0 bottom-3 h-20 w-full" beats={4} />
+      {/* ── Foot strip ── */}
+      <motion.div
+        className="mx-auto w-full max-w-7xl px-5 sm:px-8"
+        initial={{ opacity: 0, y: 24 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: start + 0.8, duration: 1.1, ease }}
+      >
+        <div className="mt-8 grid items-end gap-4 border-t border-ink/[0.11] py-6 text-sm text-dim sm:grid-cols-[1fr_auto] lg:grid-cols-[1fr_1.4fr_auto] lg:gap-6">
+          <p>
+            <strong className="font-semibold text-fg">STARMED General Trading LLC</strong>
+            <br />
+            Medical, wellness &amp; personal care — UAE &amp; GCC
+          </p>
+          <ul className="flex flex-wrap gap-2">
+            {credentials.map(({ icon: Icon, label }) => (
+              <li key={label} className="flex items-center gap-2 rounded-full border border-ink/[0.11] bg-surface/70 px-3 py-1.5 font-mono text-[11px] uppercase tracking-wider">
+                <Icon className="size-3.5 text-lime-bright" aria-hidden />
+                {label}
+              </li>
+            ))}
+          </ul>
+          <ScrollCue href="#brands" />
+        </div>
+      </motion.div>
     </section>
   );
 }

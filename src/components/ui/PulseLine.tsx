@@ -17,8 +17,8 @@ type PulseLineProps = {
 export function PulseLine({
   className,
   beats = 4,
-  color = "rgba(255,255,255,0.14)",
-  glow = "#b6e65e",
+  color = "rgba(23,54,140,0.064)",
+  glow = "#71b204",
 }: PulseLineProps) {
   const d = tracePath(1600, beats);
   return (

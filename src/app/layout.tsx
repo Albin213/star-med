@@ -1,18 +1,20 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { MotionConfig } from "motion/react";
-import { Bricolage_Grotesque, Instrument_Sans, JetBrains_Mono } from "next/font/google";
+import { JetBrains_Mono, Manrope, Sora } from "next/font/google";
 import type { ReactNode } from "react";
 import { InquiryDrawer } from "@/components/inquiry/InquiryDrawer";
 import { Footer } from "@/components/layout/Footer";
 import { Header } from "@/components/layout/Header";
 import { Preloader } from "@/components/layout/Preloader";
 import { SmoothScroll } from "@/components/layout/SmoothScroll";
+import { Cursor } from "@/components/ui/Cursor";
+import { Spotlight } from "@/components/ui/Spotlight";
 import { InquiryProvider } from "@/context/InquiryContext";
 import { site } from "@/data/site";
 import "./globals.css";
 
-const bricolage = Bricolage_Grotesque({ subsets: ["latin"], variable: "--font-bricolage" });
-const instrument = Instrument_Sans({ subsets: ["latin"], variable: "--font-instrument" });
+const sora = Sora({ subsets: ["latin"], variable: "--font-sora" });
+const manrope = Manrope({ subsets: ["latin"], variable: "--font-manrope" });
 const jetbrains = JetBrains_Mono({ subsets: ["latin"], variable: "--font-jetbrains" });
 
 const title = "STARMED General Trading LLC | Healthcare & Pharmaceutical Distribution UAE & GCC";
@@ -44,20 +46,27 @@ export const metadata: Metadata = {
   },
 };
 
+export const viewport: Viewport = {
+  themeColor: "#f7f6f2",
+  colorScheme: "dark",
+};
+
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html
       lang="en"
-      className={`${bricolage.variable} ${instrument.variable} ${jetbrains.variable} antialiased`}
+      className={`${sora.variable} ${manrope.variable} ${jetbrains.variable} antialiased`}
     >
       <body>
         <noscript>
-          <style>{`[style*="opacity:0"],[style*="opacity: 0"]{opacity:1!important;transform:none!important}`}</style>
+          <style>{`[style*="opacity:0"],[style*="opacity: 0"]{opacity:1!important;transform:none!important;filter:none!important}`}</style>
         </noscript>
         <MotionConfig reducedMotion="user">
           <InquiryProvider>
             <Preloader />
             <SmoothScroll />
+            <Spotlight />
+            <Cursor />
             <Header />
             <main>{children}</main>
             <Footer />
